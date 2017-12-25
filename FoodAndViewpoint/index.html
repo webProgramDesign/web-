@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>漸漸流失的文化-客家人</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<style>
+		body
+		{
+			background-image:url('.././mode/background.png');
+			background-repeat:no-repeat;
+			background-size:cover;
+			background-position:center;
+			background-attachment:fixed;
+		}
+	</style>
+	<script type = "text/javascript">
+		alert("歡迎來到客家美食與景點");
+	</script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$(".Ingredients").hide();
+		$("button").click(function(){
+			$(".Ingredients").toggle(1000);
+		});
+	});
+	</script>
+	
+	<body>
+		<div body>
+			<!-- Top bar -->			
+			<nav class="navbar navbar-default">
+			  <div class="container-fluid ">
+				<div class="navbar-header">
+				  <a class="navbar-brand" href="#">客家文化</a>
+				</div>
+				<ul class="nav navbar-nav w3-xlarge">
+				  <li class="active">
+				  <li><a href="#">客家節慶</a></li>
+				  <li><a href="#">文化介紹</a></li>
+				  <li><a href="#">每日一句</a></li>
+				  <li><a href="#">客家美食&景點</a></li>
+				  <li><a href="#">意見回覆</a></li>
+				</ul>
+			  </div>
+			</nav>
+			
+			<!-- Sidebar -->
+			<div class="w3-sidebar w3-light-green w3-bar-block w3-xlarge" style="width:10%">
+			  <h3 class="w3-bar-item">Menu</h3>
+			  <a href="#" class="w3-bar-item w3-button w3-padding-16">客家美食</a>
+			  <a href="#" class="w3-bar-item w3-button w3-padding-16">必遊景點</a>
+			  <a href="#" class="w3-bar-item w3-button w3-padding-16">美食製作</a>
+			</div>
+
+			<!-- Page Content -->
+			<div style="margin-left:25%">
+
+			<div class="w3-container w3-teal">
+			</div>
+			<h2>客家小炒</h2>
+			<div style="border:2px orange solid;padding:10px;width:800px">
+				<div style="background-color:white;">
+				<img src = "food1.jpg" height = "300">
+				
+				<button>材料</button> 
+				<p class = "Ingredients">五花肉 350g</p>
+				<p class = "Ingredients">乾魷魚 1/2尾</p>
+				<p class = "Ingredients">豆干 5片</p>
+				<p class = "Ingredients">芹菜 4根</p>
+				<p class = "Ingredients">青蔥 2根</p>
+				<p class = "Ingredients">蒜頭 3粒</p>
+				<p class = "Ingredients">辣椒、蒜苗 各一根</p>
+				<p class = "Ingredients">醬油膏、米酒 各一匙</p>
+				<p class = "Ingredients">砂糖 少許</p>
+				<p class = "Ingredients">水 適量</p>
+				<p class = "Ingredients">白胡椒 少許</p>
+				
+				<p>1.魷魚使用剪刀以逆紋方向剪成小條狀，在浸泡冷水約30分鐘至發，備用。</p>
+				<p>2.五花肉洗淨再切成小條狀，約1cm寬度；豆干切成和五花肉一樣的長條狀；蒜頭、辣椒切片；芹菜、青蔥、蒜苗切成小段狀，備用。</p>
+				<p>3.熱鍋，乾鍋將五花肉放入鍋中以中火煸香（煸至出油，表面略上色），再加入豆干、蒜頭與辣椒、魷魚一起爆炒。</p>
+				<p>4.承上，加入所有調味料略燒一下，最後加入青蔥段、芹菜段、蒜苗段一起翻炒均勻，上蓋悶一下即可。</p>
+				</div>
+			</div>
+			
+			</div>
+		</div>
+	</body>
+</html>
