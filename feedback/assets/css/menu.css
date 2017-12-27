@@ -1,0 +1,13 @@
+.menu{
+display:none;
+}
+.nav_bar_submenu *{
+	list-style-type:none;
+	text-decoration:none;
+}
+.nav_bar_submenu >li>a{
+	text-decoration:none;
+}
+.nav_bar_title > span >*{
+	text-decoration:none;
+}
