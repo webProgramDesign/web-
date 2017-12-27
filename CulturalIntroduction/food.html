@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>漸漸消失的文化-客家人</title>
+
+    <meta charset="utf-8">
+    <title>漸漸流失的文化-客家人</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
+
+    <style type="text/css">
+        #aside {
+            width: 200px;
+            height: 1200px;
+            text-align: center;
+            background-color: rgba(99, 192, 177, 0.356);
+            padding: 40px 20px;
+            float: left;
+        }
+
+        #section {
+            width: 1800px;
+            height: 1200px;
+            background-color: rgba(113, 204, 159, 0.336);
+            line-height: 3.0em;
+            padding: 20px;
+            float: center;
+        }
+
+        #footer {
+            padding: 20px;
+            background-color: #558197;
+            clear: both;
+        }
+
+        h1 {
+            font-family: sans-serif, "微軟正黑體";
+            font-size: 32px;
+            color: #FFF;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: sans-serif, "微軟正黑體";
+            font-size: 18px;
+            color: #FFF;
+            text-align: center;
+        }
+
+        .size1 {
+            font-family: sans-serif, "微軟正黑體";
+            font-size: 32px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .size2 {
+            font-family: sans-serif, "微軟正黑體";
+            font-size: 26px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        #top {
+            position: fixed;
+            border-radius: 50px;
+            right: 20px;
+            bottom: 30px;
+            padding: 15px 30px;
+            font-size: 28px;
+            background: rgba(0, 0, 0, 0.76);
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            z-index: 1000
+        }
+    </style>
+    <script>
+        $(function () {
+            $("#top").click(function () {
+                jQuery("html,body").animate({
+                    scrollTop: 0
+                }, 150);
+            });
+        });
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('#top').fadeIn("fast");
+            } else {
+                $('#top').stop().fadeOut("fast");
+            }
+        });
+    </script>
+</head>
+
+<style>
+    body {
+        background-image: url('background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+</style>
+
+
+<body>
+
+    <div id="top">˄</div>
+
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid ">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">客家文化</a>
+            </div>
+            <ul class="nav navbar-nav w3-xlarge">
+                <li class="active">
+                    <li>
+                        <a href="#">客家節慶</a>
+                    </li>
+                    <li>
+                        <a href="#">文化介紹</a>
+                    </li>
+                    <li>
+                        <a href="#">每日一句</a>
+                    </li>
+                    <li>
+                        <a href="#">客家美食&景點</a>
+                    </li>
+                    <li>
+                        <a href="#">意見回覆</a>
+                    </li>
+            </ul>
+        </div>
+    </nav>
+
+    <aside id="aside">
+
+        <h2 class="w3-bar-item">Menu</h2>
+        <h1>
+            <a href="origin.html" class="w3-bar-item w3-button w3-padding-16">起源</a>
+        </h1>
+        <h1>
+            <a href="food.html" class="w3-bar-item w3-button w3-padding-16">飲食</a>
+        </h1>
+
+        <h1>
+            <a href="#" class="w3-bar-item w3-button w3-padding-16">建築</a>
+        </h1>
+        <h1>
+            <a href="#" class="w3-bar-item w3-button w3-padding-16">服飾文化</a>
+        </h1>
+
+
+
+    </aside>
+
+    <section id="section">
+        <div>
+            <br>
+            <p>
+                <img src="u85.png" alt="示範圖片">
+            </p>
+            <br>
+            <P class="size2">
+                因為客家族群多遷徙且居住華中、華南丘陵的丘陵山地地區，遷徙行程中只能以鹽保存食物，
+                <br>勞動出汗多亦需補充鹽分以維持體力，因此飲食傾向多油多鹹的重口味菜，
+                <br>並且好用各式處理過的醃製菜類（如酸菜、福菜、梅乾菜、大葉品種的芥菜）作為食材入菜。
+                <br>不過目前已有偏向少油少鹹的改良式客家菜。</P>
+        </div>
+        <br>
+
+        <br>
+
+    </section>
+
+
+
+
+
+
+</body>
+
+</html>
