@@ -18,7 +18,64 @@
 			background-position:center;
 			background-attachment:fixed;
 		}
+		p{
+			text-align: center;
+			font-size:30px;
+		}
+		.colortext{
+         color: purple;
+	
+}
+
+		.colortext1{
+         color: brown;
+	
+}
 	</style>
+	<script>
+		
+		$(function(){
+			$("#ocean").hide();
+			$("#ocean_click").click(function() {
+				$("#ocean").toggle(200);
+			});
+		
+		});
+		
+	
+		$(function(){
+			$("#four").hide();
+			$("#four_click").click(function() {
+				$("#four").toggle(200);
+			});
+		
+		});
+		
+		$(function(){
+			$("#big").hide();
+			$("#big_click").click(function() {
+				$("#big").toggle(200);
+			});
+		
+		});
+		
+		$(function(){
+			$("#equal").hide();
+			$("#equal_click").click(function() {
+				$("#equal").toggle(200);
+			});
+		
+		});
+		
+		$(function(){
+			$("#less").hide();
+			$("#less_click").click(function() {
+				$("#less").toggle(200);
+			});
+		
+		});
+		
+	</script>
 	<body>
 		<div body>
 			<!-- Top bar -->			
@@ -39,21 +96,59 @@
 			</nav>
 			
 			<!-- Sidebar -->
-			<div class="w3-sidebar w3-light-write w3-bar-block w3-xlarge" style="width:60%">
-			<h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp華語辭意:橘子</h1>
+			<div class="w3-sidebar w3-light-green w3-bar-block w3-xlarge" style="width:10%">
+			<h3 class="w3-bar-item">Menu</h3>
+			  
+			
+			</div>
+			
+			<!-- Page Content -->
+			<div style="margin-left:7%">
+			<h3><p class="colortext1">今日一句:橘子</p></h3>
+			<div id="ocean"
 			<br>
-			<h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp客家語言(四縣腔)：柑仔</h1>
-			<h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp客家音標： [ gamˊ eˋ]  </h1>
-			<h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp例句： [ 這隻柑仔無水，毋好食。]</h1>
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src=".\橘子.jpg" width="200" height="100">
+			<p>客家語言(海陸腔)：柑仔</p>
+			<p>客家音標： [ gamˋ er]  </p>
+			<p>例句： [ 這隻柑仔無水，毋好食。]</p>
+			</div>
+			
+			<div id="four"
+			<br>
+			<p>客家語言(四縣腔)：柑仔</p>
+			<p>客家音標： [ gamˊ eˋ]  </p>
+			<p>例句： [ 這隻柑仔無水，毋好食。]</p>
+			</div>
+			
+			<div id="big"
+			<br>
+			<p>客家語言(大埔腔)：柑</p>
+			<p>客家音標： [ gam+ ／gamˊ]  </p>
+			<p>例句： [ 這粒柑無汁，毋好食。]</p>
+			</div>
+			
+			<div id="equal"
+			<br>
+			<p>客家語言(饒平腔)：柑仔</p>
+			<p>客家音標： [gamˇ erˋ/eˋ] </p>
+			<p>例句： [ 這隻柑仔無水，毋好食。]</p>
+			</div>
+			
+			<div id="less"
+			<br>
+			<p>客家語言(紹安腔)：柑子</p>
+			<p>客家音標： [gamˇ zu^] </p>
+			<p>例句： [ 這粒柑子無汁，無好食。]</p>
+			</div>
+			
+			
+			<br>
+			<p><img src=".\橘子.jpg" width="400" height="200"></p>
 			<br><br><br>
 			
 			
-			<h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp腔調切換：<a href="#">四海</a>&nbsp&nbsp<a href="#">海陸</a>&nbsp&nbsp<a href="#">大埔</a>&nbsp&nbsp<a href="#">饒平</a>&nbsp&nbsp<a href="#">紹安</a> </h3>
-			</div>
+			<p class="colortext">腔調切換：</p>
+			<p><a><span id="four_click">四縣</span></a>&nbsp&nbsp<a><span id="ocean_click">海陸</span></a>&nbsp&nbsp<a><span id="big_click">大埔</span></a>&nbsp&nbsp<a><span id="equal_click">饒平</span></a>&nbsp&nbsp<a><span id="less_click">紹安</span></a> </p>
 
-			<!-- Page Content -->
-			<div style="margin-left:25%">
 
 			<div class="w3-container w3-teal">
 			</div>
