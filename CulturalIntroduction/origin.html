@@ -8,8 +8,12 @@
     <title>漸漸流失的文化-客家人</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 
     <script>
         $(function () {
@@ -63,8 +67,27 @@
         background-attachment: fixed;
     }
 </style>
+<style>
+    #myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    #myImg:hover {
+        opacity: 0.7;
+    }
+
+    /* The Modal (background) */
+</style>
 
 <body>
+    <div id="myModal" class="modal">
+        <span class="close">×</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
     <div id="top">˄</div>
     <div body>
         <!-- Top bar -->
@@ -125,7 +148,8 @@
                 </strong>
                 <br>
                 <p>
-                    <img src="u85.png" alt="示範圖片">
+                    <img id="myImg" src="客語分布.png" alt="客家腔調分布圖" style="float:left;margin-right:10px" width="360" height="300">
+                    <br>
                 </p>
                 <P class="size2">
                     <br>1.「四縣腔」的比例最多(56.1%)
@@ -143,7 +167,8 @@
                     </strong>
                     <br>
                     <p>
-                        <img src="u85.png" alt="示範圖片">
+                        <img id="myImg" src="客家人.png" alt="客家人介紹" width="360" height="300" onMouseOver="this.width=this.width*1.5;this.height=this.height*1.5"
+                            onMouseOut="this.width=this.width/1.5;this.height=this.height/1.5">
                     </p>
                     <br>
                     <p class="size2">
@@ -170,7 +195,8 @@
                     <br>
 
                     <p>
-                        <img src="u85.png" alt="示範圖片">
+                        <img id="myImg" src="採茶.png" alt="客家採茶" width="360" height="300" onMouseOver="this.width=this.width*1.5;this.height=this.height*1.5"
+                            onMouseOut="this.width=this.width/1.5;this.height=this.height/1.5">
                     </p>
 
 
@@ -190,6 +216,28 @@
                 </div>
             </div>
         </div>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('myImg');
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+        </script>
 </body>
 
 </html>
