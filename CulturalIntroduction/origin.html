@@ -37,13 +37,22 @@
         font-size: 18px;
     }
 
+    .list-group1 {
+        font-size: 18px;
+        background-position: center;
+    }
+
     .size2 {
-        font-size: 20px;
+        font-size: 24px;
+        color: rgb(55, 77, 30);
+        font-weight: bold;
     }
 
     p {
 
-        font-size: 26px;
+        font-size: 30px;
+
+
     }
 
     #top {
@@ -65,6 +74,7 @@
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
+
     }
 </style>
 <style>
@@ -79,6 +89,106 @@
     }
 
     /* The Modal (background) */
+
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 100px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.9);
+        /* Black w/ opacity */
+    }
+
+    /* Modal Content (image) */
+
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+
+    /* Caption of Modal Image */
+
+    #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+    }
+
+    /* Add Animation */
+
+    .modal-content,
+    #caption {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+    @-webkit-keyframes zoom {
+        from {
+            -webkit-transform: scale(0)
+        }
+        to {
+            -webkit-transform: scale(1)
+        }
+    }
+
+    @keyframes zoom {
+        from {
+            transform: scale(0.1)
+        }
+        to {
+            transform: scale(1)
+        }
+    }
+
+    /* The Close Button */
+
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* 100% Image Width on Smaller Screens */
+
+    @media only screen and (max-width: 700px) {
+        .modal-content {
+            width: 100%;
+        }
+    }
 </style>
 
 <body>
@@ -99,19 +209,19 @@
                 <ul class="nav navbar-nav w3-xlarge">
                     <li class="active">
                         <li>
-                            <a href="#">客家節慶</a>
+                            <a href="C:\Users\User\Documents\web-\festival\臨近節日.html">客家節慶</a>
                         </li>
                         <li>
-                            <a href="#">文化介紹</a>
+                            <a href="C:\Users\User\Documents\web-\CulturalIntroduction\origin.html">文化介紹</a>
                         </li>
                         <li>
-                            <a href="#">每日一句</a>
+                            <a href="C:\Users\User\Documents\web-\everyday\每日一句.html">每日一句</a>
                         </li>
                         <li>
-                            <a href="#">客家美食&景點</a>
+                            <a href="C:\Users\User\Documents\web-\FoodAndViewpoint\客家美食.html">客家美食&景點</a>
                         </li>
                         <li>
-                            <a href="#">意見回覆</a>
+                            <a href="C:\Users\User\Documents\web-\feedback\feedback.html">意見回覆</a>
                         </li>
                 </ul>
             </div>
@@ -130,27 +240,29 @@
             <a href="architecture.html" class="w3-bar-item w3-button w3-padding-16">建築</a>
 
 
-            <a href="#" class="w3-bar-item w3-button w3-padding-16">服飾文化</a>
+            <a href="clothes.html" class="w3-bar-item w3-button w3-padding-16">服飾文化</a>
 
         </div>
 
         <!-- Page Content -->
-        <div style="margin-left:15%">
+        <div style="margin-left:12% ;font-family:微軟正黑體;text-shadow:7px 7px 7px rgb(255, 255, 255) ">
 
             <div class="w3-container w3-teal">
 
             </div>
             <div>
                 <br>
-
                 <strong>
                     <p class="size1">客家腔調的比例:</p>
                 </strong>
                 <br>
                 <p>
-                    <img id="myImg" src="客語分布.png" alt="客家腔調分布圖" style="float:left;margin-right:10px" width="360" height="300">
+                    <img id="myImg" src="客語分布.png" alt="客家腔調分布圖" style="float:left;margin-right:15px" width="570" height="450" title="請點選">
+                    <br>
+                    <br>
                     <br>
                 </p>
+
                 <P class="size2">
                     <br>1.「四縣腔」的比例最多(56.1%)
                     <br> 2.「海陸腔」(41.5%)

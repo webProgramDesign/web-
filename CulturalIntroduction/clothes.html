@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>漸漸流失的文化-客家人</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function () {
+            $("#top").click(function () {
+                jQuery("html,body").animate({
+                    scrollTop: 0
+                }, 150);
+            });
+        });
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('#top').fadeIn("fast");
+            } else {
+                $('#top').stop().fadeOut("fast");
+            }
+        });
+    </script>
+</head>
+<style>
+    .size2 {
+        font-size: 24px;
+        color: rgb(55, 77, 30);
+        font-weight: bold;
+    }
+
+    p {
+
+        font-size: 30px;
+    }
+
+    #top {
+        position: fixed;
+        border-radius: 50px;
+        right: 20px;
+        bottom: 30px;
+        padding: 15px 30px;
+        font-size: 28px;
+        background: rgba(0, 0, 0, 0.76);
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        z-index: 1000
+    }
+
+    body {
+        background-image: url('background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+</style>
+
+<style>
+    #myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    #myImg:hover {
+        opacity: 0.7;
+    }
+</style>
+
+<body>
+    <div id="top">˄</div>
+    <div body>
+        <!-- Top bar -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid ">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">客家文化</a>
+                </div>
+                <ul class="nav navbar-nav w3-xlarge">
+                    <li class="active">
+                        <li>
+                            <a href="C:\Users\User\Documents\web-\festival\臨近節日.html">客家節慶</a>
+                        </li>
+                        <li>
+                            <a href="C:\Users\User\Documents\web-\CulturalIntroduction\origin.html">文化介紹</a>
+                        </li>
+                        <li>
+                            <a href="C:\Users\User\Documents\web-\everyday\每日一句.html">每日一句</a>
+                        </li>
+                        <li>
+                            <a href="C:\Users\User\Documents\web-\FoodAndViewpoint\客家美食.html">客家美食&景點</a>
+                        </li>
+                        <li>
+                            <a href="C:\Users\User\Documents\web-\feedback\feedback.html">意見回覆</a>
+                        </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Sidebar -->
+        <div class="w3-sidebar w3-light-green w3-bar-block w3-xlarge" style="width:10%">
+            <h3 class="w3-bar-item">Menu</h3>
+            <a href="origin.html" class="w3-bar-item w3-button w3-padding-16">起源</a>
+
+
+            <a href="food.html" class="w3-bar-item w3-button w3-padding-16">飲食</a>
+
+
+
+            <a href="architecture.html" class="w3-bar-item w3-button w3-padding-16">建築</a>
+
+
+            <a href="#" class="w3-bar-item w3-button w3-padding-16">服飾文化</a>
+
+        </div>
+
+        <!-- Page Content -->
+        <div style="margin-left:12% ;font-family:微軟正黑體;text-shadow:7px 7px 7px rgb(255, 255, 255) ">
+
+            <div class="w3-container w3-teal">
+
+            </div>
+            <div>
+                <br>
+
+                <strong>
+                    <p class="size1">客家傳統服飾—藍衫:</p>
+                </strong>
+                <br>
+                <div>
+                    <p>
+                        <img id="myImg" src="藍衫.png" alt="客家藍衫" title="客家藍衫" width="600" height="350" onMouseOver="this.width=this.width*1.5;this.height=this.height*1.5"
+                            onMouseOut="this.width=this.width/1.5;this.height=this.height/1.5">
+                    </p>
+
+                    <div id="exampleAccordion" data-children=".item">
+                        <div class="item">
+                            <a style="text-decoration:none" data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion1" role="button"
+                                aria-expanded="true" aria-controls="exampleAccordion1">
+                                <p>●經濟性:</p>
+                            </a>
+                            <div id="exampleAccordion1" class="collapse " role="tabpanel">
+                                <p class="mb-3">
+
+                                    <div class="container">
+
+                                        <br>
+                                        <ul class="list-group">
+                                            <li class="list-group-item">所用布料耐洗、耐穿，所用染料以丘陵地常見植物大菁為藍色染劑。</li>
+                                            <li class="list-group-item">衣服上隱蔽之處，採用粗布剪接替代。</li>
+                                        </ul>
+                                    </div>
+
+
+                                </p>
+                            </div>
+
+
+                            <a style="text-decoration:none" data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion2" role="button"
+                                aria-expanded="true" aria-controls="exampleAccordion2">
+                                <p>●便利性:</p>
+                            </a>
+                            <div id="exampleAccordion2" class="collapse " role="tabpane2">
+                                <p class="mb-3">
+
+                                    <div class="container">
+
+                                        <br>
+                                        <ul class="list-group">
+                                            <li class="list-group-item">結構簡單、富機能性，便於操作勞動。</li>
+                                            <li class="list-group-item">大襟上直扣的配置止於腰線上，便於婦女哺乳；工作時，又可將前身摺短塞於腰帶。</li>
+                                            <li class="list-group-item">
+                                                寬大且翻摺之袖口，和貫通之腰帶，可用以放置物品或錢幣，隨身而不累贅。</li>
+                                        </ul>
+                                    </div>
+
+
+                                </p>
+                            </div>
+
+
+                            <a style="text-decoration:none" data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion3" role="button"
+                                aria-expanded="true" aria-controls="exampleAccordion3">
+                                <p>●長久性:</p>
+                            </a>
+                            <div id="exampleAccordion3" class="collapse " role="tabpane3">
+                                <p class="mb-3">
+
+                                    <div class="container">
+
+                                        <br>
+                                        <ul class="list-group">
+                                            <li class="list-group-item">穿著時間，可自早到晚，自春至冬。</li>
+                                            <li class="list-group-item">穿著之期間，可自少年時期至老年，適用期長。</li>
+                                        </ul>
+                                    </div>
+
+
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

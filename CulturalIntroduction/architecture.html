@@ -28,14 +28,20 @@
 	</script>
 </head>
 <style>
-	.size2{
-        font-size: 20px;
-    }
+	.size2 {
+		font-size: 24px;
+		color: rgb(55, 77, 30);
+		font-weight: bold;
 
-    p {
+	}
 
-        font-size: 26px;
-    }
+	p {
+
+		font-size: 30px;
+
+
+	}
+
 	#top {
 		position: fixed;
 		border-radius: 50px;
@@ -58,6 +64,18 @@
 	}
 </style>
 
+<style>
+	#myImg {
+		border-radius: 5px;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+
+	#myImg:hover {
+		opacity: 0.7;
+	}
+</style>
+
 <body>
 	<div id="top">˄</div>
 	<div body>
@@ -70,19 +88,19 @@
 				<ul class="nav navbar-nav w3-xlarge">
 					<li class="active">
 						<li>
-							<a href="#">客家節慶</a>
+							<a href="C:\Users\User\Documents\web-\festival\臨近節日.html">客家節慶</a>
 						</li>
 						<li>
-							<a href="#">文化介紹</a>
+							<a href="C:\Users\User\Documents\web-\CulturalIntroduction\origin.html">文化介紹</a>
 						</li>
 						<li>
-							<a href="#">每日一句</a>
+							<a href="C:\Users\User\Documents\web-\everyday\每日一句.html">每日一句</a>
 						</li>
 						<li>
-							<a href="#">客家美食&景點</a>
+							<a href="C:\Users\User\Documents\web-\FoodAndViewpoint\客家美食.html">客家美食&景點</a>
 						</li>
 						<li>
-							<a href="#">意見回覆</a>
+							<a href="C:\Users\User\Documents\web-\feedback\feedback.html">意見回覆</a>
 						</li>
 				</ul>
 			</div>
@@ -101,12 +119,12 @@
 			<a href="architecture.html" class="w3-bar-item w3-button w3-padding-16">建築</a>
 
 
-			<a href="#" class="w3-bar-item w3-button w3-padding-16">服飾文化</a>
+			<a href="clothes.html" class="w3-bar-item w3-button w3-padding-16">服飾文化</a>
 
 		</div>
 
 		<!-- Page Content -->
-		<div style="margin-left:25%">
+		<div style="margin-left:12% ;font-family:微軟正黑體;text-shadow:7px 7px 7px rgb(255, 255, 255) ">
 
 			<div class="w3-container w3-teal">
 
@@ -115,79 +133,76 @@
 				<br>
 
 				<strong>
-					<p class="size1">客家腔調的比例:</p>
+					<p class="size1">南部夥房與中、北部伙房:</p>
 				</strong>
 				<br>
-				<p>
-					<img src="u85.png" alt="示範圖片">
-				</p>
+
 				<P class="size2">
-					<br>1.「四縣腔」的比例最多(56.1%)
-					<br> 2.「海陸腔」(41.5%)
-					<br> 3.「南四縣腔」(4.8%)
-					<br> 4.「大埔腔」(4.2%)
-					<br> 5.「饒平腔」(1.6%)
-					<br> 6.「詔安腔」(1.3%)
-					<br> 7.其他腔調( 0.5%)</P>
-				<div>
+					<br>臺灣北中南在聚落地理學上早就有北部多丘陵多散村，
+					<br>南部多平原多集村，中部尤其是彰化(一般都說在大甲溪與濁水溪之間)即有夾在中間，
+					<br>以水文、山麓為依靠的帶狀連村，因此早在民國50年代，從美濃周刊與臺中東勢的山城周刊，
+					<br>即在文字上，有以六堆客家民居用「夥房」， 中部山城石岡、東勢客家民居用「伙房」的專門用語，
+					<br>加上苗栗公館鄉的徐家大伙房與劉舉人伙房的地圖標記，使得集村的夥房與散村的伙房，
+					<br>形成一個南北客家民居建築形式不同的區分。
+
+					<div>
+						<br>
+						<br>
+
+						<br>
+						<p>
+							<img id="myImg" src="南部夥房.png" alt="南部夥房" title="南部夥房" width="400" height="350" onMouseOver="this.width=this.width*1.5;this.height=this.height*1.5"
+							 onMouseOut="this.width=this.width/1.5;this.height=this.height/1.5">
+							<img id="myImg" src="客家北部伙房.png" alt="中、北部伙房" title="中、北部伙房" width="400" height="350" onMouseOver="this.width=this.width*1.5;this.height=this.height*1.5"
+							 onMouseOut="this.width=this.width/1.5;this.height=this.height/1.5">
+
+						</p>
+
+						<br>
+
+
+
+
+
+						<div id="exampleAccordion" data-children=".item">
+							<div class="item">
+								<a style="text-decoration:none" data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion1" role="button"
+								 aria-expanded="true" aria-controls="exampleAccordion1">
+									<p>南部"夥"房:</p>
+								</a>
+								<div id="exampleAccordion1" class="collapse " role="tabpanel">
+									<p class="mb-3">
+										<p class="size2">南部的客家夥房，由於是建立在集村上的民居建築圍聚，每一座民居夥房三合院，
+											<br>是在正堂、橫屋之外，空間不夠住之下的彈性增建，所以是夾擠在土地產權地界與周側圍牆的「塞」空間，
+											<br>這些外圍建築六堆客家人稱之為圍龍屋。</p>
+									</p>
+								</div>
+							</div>
+							<br>
+
+							<div class="item">
+								<a style="text-decoration:none" data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion2" role="button"
+								 aria-expanded="false" aria-controls="exampleAccordion2">
+									<p>中、北部"伙"房:</p>
+								</a>
+								<div id="exampleAccordion2" class="collapse" role="tabpanel">
+									<p class="mb-3">
+										<p class="size2">中北部的客家伙房，由於是建立在散村與帶狀連村上的丘陵地與山麓，每一棟客家民居間是有距離的，
+											<br>其間空隙是很大的，因此它的擴張是在正堂、橫屋的外側，用前面圍、後面圍，甚至有方的造型框圈，
+											<br>也有圓的造型框圈，以後者居多，圍弧狀的框圈還有作兩層以上的，當地人稱這種正堂、橫屋外的框圈作法叫「圍屋」，
+											<br>為房屋擴建的中性稱法。</p>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
 					<br>
-					<br>
-					<strong>
-						<p class="size1">「客家人」是指?</p>
-					</strong>
-					<br>
-					<p>
-						<img src="u85.png" alt="示範圖片">
-					</p>
-					<br>
-					<p class="size2">
 
-						客家民系，俗稱「客家族群」或「客家人」，
-						<br>在西方人類學上被簡稱作「Hakka」（客家語：客家，白話字：Hak-kâ)，
-						<br>是漢族的一個分支，也是南方漢族影響深遠的族群之一，
-						<br>為中國南方唯一不以地域命名之民系，也沒有自己的省份。
+					<div>
 
-					</p>
-
-					<p class="size2">
-						該民系主要分布於華南各地，尤其以廣東東部（粵東）、北部（粵北）和西部（粵西）片區，
-						<br>以及廣西東南部和福建西部（閩西）、江西南部（贛南）、台灣西北部（桃竹苗）及（高屏）地區為主要集中地，
-						<br>加上其由北方漢人南遷與南方少數民族相互融合， 形成了一種兼具漢族與少數民族文化的獨特群體。
-					</p>
-				</div>
-				<br>
-
-				<div>
-					<strong>
-						<p class="size1">客家的風俗</p>
-					</strong>
-					<br>
-
-					<p>
-						<img src="u85.png" alt="示範圖片">
-					</p>
-
-
-					<li class="size2">
-						客家人唱山歌，並且在不同的場合、節慶時有對歌的風俗。
-
-					</li>
-					<li class="size2">
-						明清時期的客家人與其他漢族不同，僅少數有裹腳的習俗，多數窮人家女子一般赤腳或穿木屐，與男子無異。
-					</li>
-					<li class="size2">
-						客家人有在清明節做艾粄的習俗，各地的掃墓時間不同（見掃墓條）。
-					</li>
-					<li class="size2">
-						客家人傳統節日主要有春節、元宵節、清明節、端午節、中元節、中秋節、重陽節、冬至節和
-						<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一些地方性的神社祭會、 農事會及其它俗信紀念。
-					</li>
-					<li class="size2">
-						客家人婚禮一般有說媒、坐談、合八字、定親、迎娶、三朝幾個環節。
-					</li>
-					<br>
-					<br>
-				</div>
+						<br>
+						<br>
+					</div>
 			</div>
 		</div>
 </body>
