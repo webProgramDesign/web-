@@ -4,13 +4,52 @@
 	<head>
 		<meta charset = "utf-8">
 		<title>漸漸流失的文化-客家人</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!-- Cal -->
+		<link href='https://fullcalendar.io/js/fullcalendar-3.8.0/fullcalendar.min.css' rel='stylesheet' />
+		<link href='https://fullcalendar.io/js/fullcalendar-3.8.0/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+		<script src='https://fullcalendar.io/js/fullcalendar-3.8.0/lib/moment.min.js'></script>
+		<script src='https://fullcalendar.io/js/fullcalendar-3.8.0/lib/jquery.min.js'></script>
+		<script src='https://fullcalendar.io/js/fullcalendar-3.8.0/fullcalendar.min.js'></script>
+
+		<script>
+
+				$(document).ready(function() {
+			
+					$('#calendar').fullCalendar({
+						header: {
+							left: 'prev,next today',
+							center: 'title',
+							right: 'month,basicWeek,basicDay'
+						},
+						defaultDate: '2017-12-31',
+						navLinks: true, // can click day/week names to navigate views
+						editable: true,
+						eventLimit: true, // allow "more" link when too many events
+						events: [
+							// {
+							//   title: 'Meeting',
+							//   start: '2017-12-12T10:30:00',
+							//   end: '2017-12-12T12:30:00'
+							// },
+							// {
+							//   title: 'Click for Google',
+							//   url: 'http://google.com/',
+							//   start: '2017-12-28'
+							// }
+						]
+					});
+			
+				});
+			
+			</script>
 		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-		</script>
 		<script>
 			$(document).ready(function(){
 				$("p").hide();
@@ -37,14 +76,26 @@
 			text-align: center;
 			font-size: 18px;
 		}
+		#calendar{
+			max-width: 400px;
+   			margin: 0 auto;
+		}
+		.content{
+			background-color: #FFFFFF;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+		}
+
 	</style>
 	<body>
 	
 	
-		<div body>
+		<div style="width:70%;margin:0px auto">
 			<!-- Top bar -->			
 			<nav class="navbar navbar-default">
-			  <div class="container-fluid ">
+			  <div class="container-fluid content">
 				<div class="navbar-header">
 				  <a class="navbar-brand" href="#">客家文化</a>
 				</div>
@@ -53,8 +104,8 @@
 				  <li><a href="./臨近節日.html">客家節慶</a></li>
 					<li><a href="../CulturalIntroduction/origin.html">文化介紹</a></li>
 				  <li><a href="../everyday/每日一句.html">每日一句</a></li>
-				  <li><a href="../FoodAndViewpoint/客家美食.html">客家美食,景點</a></li>
-				  <li><a href="../feedback/feedback.html">意見回覆</a></li>
+				  <li><a href="../FoodAndViewpoint/客家美食.html">客家美食&景點</a></li>
+				  <li><a href="../feedback/test.html">意見回覆</a></li>
 				</ul>
 			  </div>
 			</nav>
@@ -72,12 +123,10 @@
 			<div class="w3-container w3-teal">
 			</div>
 		
-			<script language="javascript">
-				document.write('<img src="./cal.jpg">');
-			</script>
-			<script language="javascript">
+			<div id='calendar'></div>
+			<!-- <script language="javascript">
 				document.write('<img src="./drama.jpg">');
-			</script>
+			</script> -->
 			
 			<h1>客家傳統戲曲收冬戲</h1>
 			
