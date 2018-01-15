@@ -139,8 +139,12 @@
                 <br>
                 <div>
                     <p>
-                        <img id="myImg" src="藍衫.png" alt="客家藍衫" title="客家藍衫" width="600" height="350" onMouseOver="this.width=this.width*1.5;this.height=this.height*1.5"
-                            onMouseOut="this.width=this.width/1.5;this.height=this.height/1.5">
+                        <picture>
+                            <source srcset="image" type="image">
+                            <img id="myImg" src="藍衫.png" class="img-fluid img-thumbnail" alt="客家藍衫" width="600" height="350" onMouseOver="this.width=this.width*1.5;this.height=this.height*1.5"
+                                onMouseOut="this.width=this.width/1.5;this.height=this.height/1.5">
+                        </picture>
+
                     </p>
 
                     <div id="exampleAccordion" data-children=".item">
