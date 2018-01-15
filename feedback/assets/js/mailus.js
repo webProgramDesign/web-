@@ -1,56 +1,45 @@
 $(document).ready(function() {
-    $('#submit').click(function() {
+    $('#submit_btn').click(function() {
+        var user_input = $("#data_email").val();
+        var filter = /^[a-zA-Z0-9]+[a-zA-Z0-9_.-]+[a-zA-Z0-9_-]+@[a-zA-Z0-9]+[a-zA-Z0-9.-]+[a-zA-Z0-9]+.[a-z]{2,4}$/;
+        if (filter.test(user_input)) {
 
-        if ($('#agree')[0].checked != false) {
-            console.log("hi")
-            $.ajax({
-                type: 'POST',
-                url: '/assets/php/mailus.php',
-                dataType: 'text',
-                data: {
-                    'name': $('#name').val(),
-                    'email': $('email').val(),
-                    'message': $('message').val()
-                },
-                success: function(data) {
+            if ($('#data_name').val() != "" && $('#data_message').val() != "") {
+                if ($('#agree')[0].checked != false) {
 
-                    console.log(data)
-                    alert("發送成功");
-                    console.log("123")
+                    $.ajax({
+                        type: 'POST',
+                        url: '/assets/php/mailus.php',
+                        dataType: 'text',
+                        data: {
+                            'name': $('#data_name').val(),
+                            'email': $('#data_email').val(),
+                            'message': $('#data_message').val()
+                        },
+                        success: function(data) {
+                            console.log(data)
+                            alert("發送成功");
+                            document.getElementById("data_name").value="";
+                            document.getElementById("data_email").value="";
+                            document.getElementById("data_message").value="";
+                        },
 
-                },
-                error: function(data) {
-                    alert("連線超時");
+                        error: function(data) {
+                            console.log(data)
+                            alert("連線超時");
+                        }
+                    });
+
+                } else {
+
+                    alert("請同意會員條款");
                 }
-            });
-            // $.ajax({
-            //     type: 'get',
-            //     url: '/assets/php/prop.php',
-            //     dataType: 'json',
-            //     success: function(data) {
-            //         ide = data[0].ide;
-            //         switch (data[0].ide) {
-            //             case '1':
-            //                 break;
-            //             case '2':
-            //                 break;
-            //             default:
-            //                 $.get("dashboard.html", function(data) {
-            //                     $("#content").html(data);
-            //                 });
-            //                 break;
-            //         }
-
-            //     },
-            //     error: function(data) {
-            //         $.get("dashboard.html", function(data) {
-            //             $("#content").html(data);
-            //         });
-            //     }
-            // });
+                
+            } else {
+                alert("some of data is NULL");
+            }
         } else {
-
-            alert("請同意會員條款");
+            alert("e-mail error");
         }
 
     });
