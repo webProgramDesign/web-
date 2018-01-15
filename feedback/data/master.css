@@ -1,0 +1,14 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(awesomefont4.4/css/font-awesome.min.css);
+@import url(rwdgrid.css);
+* {
+    font-family: Heiti TC, "微軟正黑體", "メイリオ", Microsoft JhengHei, Helvetica, Arial, sans-serif;
+}
+
+
+
+.mainArea {
+    background: #FFF;
+    padding: 50px 0;
+}
