@@ -1,0 +1,8 @@
+@charset "utf-8";
+.loadMask{position:fixed;left:0;top:0;width:100%;height:100%;z-index:99999}
+.loadMask:before{content:"";display:block;background:#cf3435;background-size:cover;width:100%;height:100%;bottom:0;left:0;opacity:1;position:fixed;transition:all .5s ease}
+#loader:after{content:"";position:absolute;top:0;left:0;border-radius:99em;border:1px solid #c11d1e;width:194px;height:194px;margin:2px;z-index:-1}
+#loader{position:fixed;left:50%;top:50%;margin-top:-100px;margin-left:-100px;width:200px;height:200px;text-align:center;z-index:100000;transition:all .4s ease}
+#loader .logo{width:80px;height:80px;text-align:center;position:absolute;left:50%;top:50%;margin-top:-40px;margin-left:-40px}
+.loadMask.finish:before{bottom:100%}
+#loader.finish{transform:scale(2.5);opacity:0}
