@@ -9,8 +9,13 @@
 
 
 .mainArea {
+    width: 60%;
+    margin: 50px auto;
+    height: auto;
     background: #FFF;
     padding: 50px 0;
+    min-width:50%;
+    margin-left: 25%;
 }
 
 
@@ -28,6 +33,15 @@
 /*手機*/
 
 @media screen and (max-width: 1297px) {
+    .mainArea {
+    width: 60%;
+    margin: 50px auto;
+    height: auto;
+    background: #FFF;
+    padding: 50px 0;
+    min-width:100%;
+    margin-left: 0%;
+}
     @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
     @charset "UTF-8";
     #normal_website {
